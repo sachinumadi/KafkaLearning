@@ -37,16 +37,16 @@ import java.util.Properties;
             String topicName;
             int numEvents;
             if(args.length !=2){
-                System.out.println("Please Enter correct commandLine Args : <topicName> <numEvents>");
+                logger.info("Please Enter correct commandLine Args : <topicName> <numEvents>");
                 System.exit(-1);
             }
 
             topicName = args[0];
             numEvents= Integer.valueOf(args[1]);
-            System.out.println("Starting SimpleProducer .... ");
-            System.out.println("topicName : " +topicName + " numEvents : "+numEvents);
+            logger.info("Starting SimpleProducer .... ");
+            logger.info("topicName : " +topicName + " numEvents : "+numEvents);
 
-            System.out.println("Creating Kafka Producer...");
+            logger.info("Creating Kafka Producer...");
             Properties props = new Properties();
             props.put(ProducerConfig.CLIENT_ID_CONFIG, "SimpleProducer");
             props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");

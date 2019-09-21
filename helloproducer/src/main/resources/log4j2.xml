@@ -12,7 +12,7 @@
         <Logger name="org.apache.kafka.clients" level="warn" additivity="false">
             <AppenderRef ref="stdout"/>
         </Logger>
-        <Logger name="gcom.umadi.sachin.kafka.examples" level="info" additivity="false">
+        <Logger name="com.umadi.sachin.kafka.examples" level="info" additivity="false">
             <AppenderRef ref="stdout"/>
         </Logger>
     </Loggers>
